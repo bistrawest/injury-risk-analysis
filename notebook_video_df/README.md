@@ -1,30 +1,27 @@
 # Gymnastics Beam Injury Risk Analysis
 
 ## Project Overview
+This project analyzes **injury risk during gymnastics beam routines**.  
+It uses a **beam video** as input and performs:
 
-This project analyzes injury risk during gymnastics beam routines. Using the beam video (beam_video.mp4) as input, the pipeline detects human pose landmarks, calculates joint angles and angular velocities, and flags frames that may correspond to risky movements.
+- Pose detection using **MediaPipe**  
+- Calculation of **joint angles** and **angular velocities**  
+- Flagging of **risky frames** based on extreme joint velocities  
+- An **illustrative machine learning model** (Random Forest) to predict risky frames  
 
-A small dataset is generated from the video, which is then used in an illustrative machine learning example to predict risky frames using joint angles.
-
----
+> **Note:** The dataset is small and the ML model is illustrative — intended for demonstration, not production use.
 
 ## Folder Structure
-
-injury_risk_analysis/
-|
-    beam_pose.ipynb              # Jupyter notebook
-    beam_pose_risk_data.csv      # Output dataset
-    beam_video.mp4               # Input video (optional if large, see note)
-    README.md                    # This README file
-    requirements.txt             # Python dependencies
-|
-
----
+- `beam_video.mp4` — Input video (optional if large)  
+- `injury_risk_analysis.ipynb` — Jupyter notebook with all code and analysis  
+- `beam_pose_risk_data.csv` — Generated dataset  
+- `requirements.txt` — Python dependencies  
+- `README.md` — This file  
 
 ## Dependencies
+Install required packages:
 
-Install the required packages with:
-
+```bash
 pip install -r requirements.txt
 
 Contents of requirements.txt:
@@ -41,48 +38,41 @@ jupyter
 ---
 
 ## Usage
-1.	Place your video file in the project folder (or reference an external link).
-2.	Open and run the notebook injury_risk_analysis.ipynb.
-3.	The notebook will:
-	• 	Read the video frame by frame
-	•	Detect pose landmarks using MediaPipe
-	•	Calculate joint angles and angular velocities
-	•	Flag frames exceeding a velocity threshold as risky_velocity
-	•	Save the resulting dataset to beam_pose_risk_data.csv
-	•	Optionally train an illustrative ML model (Random Forest) to predict risky frames
+1. Place your video file in the project folder (or reference an external link).
+2. Open and run `injury_risk_analysis.ipynb`.
+3. The notebook will:
+   - Read video frames
+   - Detect pose landmarks
+   - Calculate joint angles and angular velocities
+   - Flag frames exceeding velocity thresholds as `risky_velocity`
+   - Save the dataset to `beam_pose_risk_data.csv`
+   - Train an illustrative Random Forest classifier to predict risky frames
 
 ---
 
 ## Output
 
-The CSV file beam_pose_risk_data.csv contains:
-
-Column	Description
-left_knee	Angle of the left knee (degrees)
-right_knee	Angle of the right knee (degrees)
-left_hip	Angle of the left hip (degrees)
-right_hip	Angle of the right hip (degrees)
-left_shoulder	Angle of the left shoulder (degrees)
-right_shoulder	Angle of the right shoulder (degrees)
-*_vel	Angular velocity of each joint (degrees/frame)
-risky_velocity	Flag (0 or 1) indicating frames with high angular velocity
-
-Note: This is a small dataset, generated from a single video, and the ML model is illustrative only, intended to demonstrate machine learning concepts rather than produce a deployable predictor.
+The dataset contains:
+- Joint angles: left_knee, right_knee, left_hip, right_hip, left_shoulder, right_shoulder (degrees)
+- Angular velocities: *_vel for each joint (degrees/frame)
+- Risky frames: risky_velocity (0 or 1) indicating extreme angular velocity
 
 ---
 
 ## Analysis / Visualization
 
 The notebook includes:
-	• Histograms of joint angles and velocities
-	• Time-series plots of angular velocities over frames
-	• Counts of risky frames and joint contributions
-	• Machine learning demonstration: Random Forest classifier with feature importance
+- Histograms of joint angles and velocities
+- Time-series plots of angular velocities
+- Counts of risky frames and joint contributions
+- Machine learning demonstration:
+   - Random Forest classifier
+   - Feature importance visualization
 
 ---
 
 ## Next Steps / Extensions
-	• Expand dataset with multiple videos or gymnasts
-	• Test other ML models (Logistic Regression, Gradient Boosting, SVM)
-	• Integrate video visualization of risky frames
-	• Use more advanced biomechanics features (joint torques, angular acceleration)
+- Expand dataset with more videos and gymnasts
+- Try other ML models (Logistic Regression, Gradient Boosting, SVM)
+- Add video visualization of risky frames
+- Explore additional biomechanics features (joint torques, angular acceleration)
