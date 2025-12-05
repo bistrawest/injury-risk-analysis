@@ -74,15 +74,15 @@ Note: This is a small dataset, generated from a single video, and the ML model i
 ## Analysis / Visualization
 
 The notebook includes:
-	* Histograms of joint angles and velocities
-	* Time-series plots of angular velocities over frames
-	* Counts of risky frames and joint contributions
-	* Machine learning demonstration: Random Forest classifier with feature importance
+	• Histograms of joint angles and velocities
+	• Time-series plots of angular velocities over frames
+	• Counts of risky frames and joint contributions
+	• Machine learning demonstration: Random Forest classifier with feature importance
 
 ---
 
 ## Next Steps / Extensions
-	* Expand dataset with multiple videos or gymnasts
-	* Test other ML models (Logistic Regression, Gradient Boosting, SVM)
-	* Integrate video visualization of risky frames
-	* Use more advanced biomechanics features (joint torques, angular acceleration)
+	• Expand dataset with multiple videos or gymnasts
+	• Test other ML models (Logistic Regression, Gradient Boosting, SVM)
+	• Integrate video visualization of risky frames
+	• Use more advanced biomechanics features (joint torques, angular acceleration)
