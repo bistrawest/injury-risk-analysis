@@ -2,7 +2,7 @@
 
 ## Project Overview
 This project analyzes **injury risk during gymnastics beam routines**.  
-It uses a **beam video** as input and performs:
+It uses a **compilation video of beam falls** as input and performs:
 
 - Pose detection using **MediaPipe**  
 - Calculation of **joint angles** and **angular velocities**  
