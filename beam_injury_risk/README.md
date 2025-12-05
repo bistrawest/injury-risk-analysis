@@ -20,9 +20,9 @@ It uses a **beam video** as input and performs:
 
 ## Dependencies
 Install required packages:
-
+```
 pip install -r requirements.txt
-
+```
 ### Contents of requirements.txt:
 - pandas
 - numpy
