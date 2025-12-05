@@ -41,10 +41,10 @@ jupyter
 ---
 
 ## Usage
-	1.	Place your video file in the project folder (or reference an external link).
-	2.	Open and run the notebook injury_risk_analysis.ipynb.
-	3.	The notebook will:
-	•	Read the video frame by frame
+1.	Place your video file in the project folder (or reference an external link).
+2.	Open and run the notebook injury_risk_analysis.ipynb.
+3.	The notebook will:
+	• 	Read the video frame by frame
 	•	Detect pose landmarks using MediaPipe
 	•	Calculate joint angles and angular velocities
 	•	Flag frames exceeding a velocity threshold as risky_velocity
