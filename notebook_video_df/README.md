@@ -1,6 +1,6 @@
-Gymnastics Beam Injury Risk Analysis
+# Gymnastics Beam Injury Risk Analysis
 
-Project Overview
+## Project Overview
 
 This project analyzes injury risk during gymnastics beam routines. Using the beam video (beam_video.mp4) as input, the pipeline detects human pose landmarks, calculates joint angles and angular velocities, and flags frames that may correspond to risky movements.
 
@@ -8,7 +8,7 @@ A small dataset is generated from the video, which is then used in an illustrati
 
 ---
 
-Folder Structure
+## Folder Structure
 
 injury_risk_analysis/
 |
@@ -21,7 +21,7 @@ injury_risk_analysis/
 
 ---
 
-Dependencies
+## Dependencies
 
 Install the required packages with:
 
@@ -38,9 +38,9 @@ mediapipe
 jupyter
 
 
-⸻
+---
 
-Usage
+## Usage
 	1.	Place your video file in the project folder (or reference an external link).
 	2.	Open and run the notebook injury_risk_analysis.ipynb.
 	3.	The notebook will:
@@ -51,9 +51,9 @@ Usage
 	•	Save the resulting dataset to beam_pose_risk_data.csv
 	•	Optionally train an illustrative ML model (Random Forest) to predict risky frames
 
-⸻
+---
 
-Output
+## Output
 
 The CSV file beam_pose_risk_data.csv contains:
 
@@ -69,9 +69,9 @@ risky_velocity	Flag (0 or 1) indicating frames with high angular velocity
 
 Note: This is a small dataset, generated from a single video, and the ML model is illustrative only, intended to demonstrate machine learning concepts rather than produce a deployable predictor.
 
-⸻
+---
 
-Analysis / Visualization
+## Analysis / Visualization
 
 The notebook includes:
 	•	Histograms of joint angles and velocities
@@ -79,9 +79,9 @@ The notebook includes:
 	•	Counts of risky frames and joint contributions
 	•	Machine learning demonstration: Random Forest classifier with feature importance
 
-⸻
+---
 
-Next Steps / Extensions
+## Next Steps / Extensions
 	•	Expand dataset with multiple videos or gymnasts
 	•	Test other ML models (Logistic Regression, Gradient Boosting, SVM)
 	•	Integrate video visualization of risky frames
