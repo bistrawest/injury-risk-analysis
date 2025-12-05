@@ -21,7 +21,6 @@ It uses a **beam video** as input and performs:
 ## Dependencies
 Install required packages:
 
-```bash
 pip install -r requirements.txt
 
 Contents of requirements.txt:
@@ -37,7 +36,7 @@ jupyter
 
 ---
 
-## Usage
+## Usage 
 1. Place your video file in the project folder (or reference an external link).
 2. Open and run `injury_risk_analysis.ipynb`.
 3. The notebook will:
