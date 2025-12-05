@@ -12,7 +12,7 @@ It uses a **compilation video of beam falls** as input and performs:
 > **Note:** The dataset is small and the ML model is illustrative — intended for demonstration, not production use.
 
 ## Folder Structure
-- `beam_video.mp4` — Input video (optional if large)  
+- `beam_video.mp4` — Input video (slightly above 50MB recommendation limit)
 - `injury_risk_analysis.ipynb` — Jupyter notebook with all code and analysis  
 - `beam_pose_risk_data.csv` — Generated dataset  
 - `requirements.txt` — Python dependencies  
