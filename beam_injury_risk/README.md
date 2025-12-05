@@ -23,15 +23,14 @@ Install required packages:
 
 pip install -r requirements.txt
 
-Contents of requirements.txt:
-
-pandas
-numpy
-matplotlib
-scikit-learn
-opencv-python
-mediapipe
-jupyter
+### Contents of requirements.txt:
+- pandas
+- numpy
+- matplotlib
+- scikit-learn
+- opencv-python
+- mediapipe
+- jupyter
 
 
 ---
