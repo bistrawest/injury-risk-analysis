@@ -79,8 +79,6 @@ This plot shows the change in angular velocity over the time frame. The joints i
 
 This is also reflected on in the frame value counts designated as risky for each joint:
 
-####Risky counts per joint
-
 | Joint    | Risky counts |
 |----------|----------|
 | left_knee_vel | 339  |
