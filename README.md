@@ -78,13 +78,18 @@ The notebook includes:
 This plot shows the change in angular velocity over the time frame. The joints in frames above the risk threshold which was set at the 75th percentile show variation. There is specific joint exposed to more risk than the other in the beam routines, which indicates all of them have similar probabilities of injury at high risk angular velocities.
 
 This is also reflected on in the frame value counts designated as risky for each joint:
-Risky counts per joint
-left_knee_vel         339
-right_knee_vel        335
-left_hip_vel          315
-right_hip_vel         318
-left_shoulder_vel     376
-right_shoulder_vel    320
+
+####Risky counts per joint
+
+| Joint    | Risky counts |
+|----------|----------|
+| left_knee_vel | 339  |
+| right_knee_vel | 335 |
+| left_hip_vel | 315 |
+| right_hip_vel | 318 |
+| left_shoulder_vel | 376 |
+| right_shoulder_vel |320 |
+
 
 ### Feature importance by joint `joints-feature-importance.png`
 This bar plot shows the feature importance of each joint based on RandomForest. This ML model is illustrative and needs a much larger dataset to work with if it is to perform well. However, we see that the right and left shoulder joints have slightly higher feature importance values than the other joints when predicting risk of injury. This can suggest the heavier strain in the shoulders and arms when performing beam routines, but of course, feature importance does not equal better correlation to the risk factor.
