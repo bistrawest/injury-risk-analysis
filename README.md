@@ -75,7 +75,7 @@ The notebook includes:
 ## Discussion and conclusion
 
 ### Frame vs. Angular velocity `frame-vs-angularvel.png`
-This plot shows the change in angular velocity over the time frame. The joints in frames above the risk threshold which was set at the 75th percentile show variation. There is specific joint exposed to more risk than the other in the beam routines, which indicates all of them have similar probabilities of injury at high risk angular velocities.
+This plot shows the change in angular velocity over the time frame. The joints in frames above the risk threshold (set at the 75th percentile) do not show a visible trend. There is no specific joint exposed to more risk than the other in the beam routines, which indicates that perhaps all of them have similar probabilities of injury at these high risk angular velocities.
 
 This is also reflected in the frame value counts designated as risky for each joint:
 
